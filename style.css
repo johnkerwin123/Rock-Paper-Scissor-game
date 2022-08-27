@@ -1,0 +1,136 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 20px;
+  text-align: center;
+  color: #02182B;
+  justify-content: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  background:rgb(232, 225, 225);
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+.header {
+  background: rgb(110, 206, 174);
+  border-bottom: .5px rgb(182, 84, 84) solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+.header h1 {margin-bottom: 5px;}
+.header h4 {
+  margin: 5px auto 10px auto;
+  opacity: .75;
+}
+#h3 {
+  margin: 20px;
+}
+
+.game-screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 110px;
+}
+#win-message {margin-bottom: 25px;}
+.game-screen > * {margin: 25px 0 0 0;}
+
+
+.score-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 10px;
+}
+.score-board {
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+ border-bottom: .5px rgb(182, 84, 84) solid;
+ display: flex;
+ flex-direction: column;
+ margin-top: 30px;
+ width: 100%;
+ margin: 5px 5px 5px 5px;
+ border-radius: 5px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.score-label {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: rgb(110, 206, 174);
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 20px;
+  border-bottom: .25px ;
+} 
+.score {
+  margin: auto 0;
+  padding: auto 0;
+  font-size: 4.0em;
+  border-radius: 5px;
+}
+#round {
+  color: rgb(0, 138, 231);
+}
+
+.controls  {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
+.buttons { 
+  /* 
+  margin-top: 20px;
+  background-color: rgb(110, 206, 174);
+  border: none;
+  border-radius: 20px;
+  width: 30%;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.buttons {
+  align-items: center;
+  margin: 5px 5px 5px 5px;
+  background: rgb(110, 206, 174);
+  border: none;
+  border: 1px solid rgb(86, 159, 223);
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 30%;
+  cursor: pointer;
+  transition: 0.2s;
+  color: rgb(42, 114, 114);
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+}
+#reset-button {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(42, 114, 114);
+  background-color: rgb(110, 206, 174); 
+}
+#reset-button:hover {
+  background-color: rgb(0, 138, 231);
+  color:#fff;
+}
+.buttons:hover {
+  background-color: rgb(0, 138, 231);
+  color: #fff;
+}
+.buttons:focus {
+  outline-color: #fff;
+}
+
